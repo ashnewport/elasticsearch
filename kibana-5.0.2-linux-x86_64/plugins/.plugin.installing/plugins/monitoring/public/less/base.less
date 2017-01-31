@@ -1,0 +1,81 @@
+@md_size_screen: 980px;
+
+monitoring-main {
+  .navbar {
+    min-height: 0;
+  }
+}
+
+.monitoring-view {
+
+  .monitoring-element {
+    &.row {
+      margin-bottom: 15px;
+    }
+  }
+
+  &.no-padding {
+    padding: 0;
+  }
+
+  .table > thead > tr > th {
+    border-bottom: 2px solid @esVeryLightGray;
+  }
+
+  .table > tbody > tr > th,
+  .table > tfoot > tr > th,
+  .table > thead > tr > td,
+  .table > tbody > tr > td,
+  .table > tfoot > tr > td,
+  .table.table-condensed > tbody > tr > th,
+  .table.table-condensed > tfoot > tr > th,
+  .table.table-condensed > thead > tr > td,
+  .table.table-condensed > tbody > tr > td,
+  .table.table-condensed > tfoot > tr > td {
+    border-color: @esLightGray;
+  }
+
+  .table {
+    margin-bottom: 0;
+  }
+
+  th {
+    font-weight: normal;
+  }
+
+  a[data-reactid] { cursor: pointer; }
+
+  .status {
+    display: inline-block;
+    margin-left: 4px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: white;
+    min-width: 1.9em;
+    text-align: center;
+  }
+
+  .status-green {
+    background-color: @esGreen;
+  }
+
+  .status-red {
+    background-color: @esRed;
+  }
+
+  .status-yellow {
+    background-color: @esYellow;
+  }
+
+  .status-offline {
+    background-color: @esGray;
+  }
+
+  .offline {
+    color: @esDarkGray;
+  }
+}
+
+  .monitoring-view-listing-table {
+    border-bottom: 1px solid @esLightGray;
+  }
